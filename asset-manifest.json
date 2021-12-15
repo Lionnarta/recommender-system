@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/recommender-system/static/css/main.77cb37ad.chunk.css",
+    "main.js": "/recommender-system/static/js/main.f420d015.chunk.js",
+    "main.js.map": "/recommender-system/static/js/main.f420d015.chunk.js.map",
+    "runtime-main.js": "/recommender-system/static/js/runtime-main.5f90f0cb.js",
+    "runtime-main.js.map": "/recommender-system/static/js/runtime-main.5f90f0cb.js.map",
+    "static/js/2.2321200a.chunk.js": "/recommender-system/static/js/2.2321200a.chunk.js",
+    "static/js/2.2321200a.chunk.js.map": "/recommender-system/static/js/2.2321200a.chunk.js.map",
+    "static/js/3.193f6528.chunk.js": "/recommender-system/static/js/3.193f6528.chunk.js",
+    "static/js/3.193f6528.chunk.js.map": "/recommender-system/static/js/3.193f6528.chunk.js.map",
+    "index.html": "/recommender-system/index.html",
+    "static/css/main.77cb37ad.chunk.css.map": "/recommender-system/static/css/main.77cb37ad.chunk.css.map",
+    "static/js/2.2321200a.chunk.js.LICENSE.txt": "/recommender-system/static/js/2.2321200a.chunk.js.LICENSE.txt",
+    "static/media/Login.css": "/recommender-system/static/media/walmart.d3d6ef90.jfif",
+    "static/media/walmartLogo.d65d1ff4.png": "/recommender-system/static/media/walmartLogo.d65d1ff4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5f90f0cb.js",
+    "static/js/2.2321200a.chunk.js",
+    "static/css/main.77cb37ad.chunk.css",
+    "static/js/main.f420d015.chunk.js"
+  ]
+}

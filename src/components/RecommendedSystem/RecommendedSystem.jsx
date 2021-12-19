@@ -57,7 +57,7 @@ const RecommendedSystem = (props) => {
                         <div className='rs-flex'>
                             <div className='rs-mr-5'>
                                 <p>ID</p>
-                                <p>Rating</p>
+                                <p>Predicted rating</p>
                             </div>
                             <div>
                                 <p>: { data.product_id }</p>

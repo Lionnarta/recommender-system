@@ -54,15 +54,18 @@ const RecommendedSystem = (props) => {
                 <div className='rs-r-card'>
                     <img src={ walmartLogo } alt="" className='rs-r-carousel-img' />
                     <div className='rs-r-carousel-text'>
-                        <div className='rs-mr-5'>
-                            <p>ID</p>
-                            <p>Rating</p>
-                            <p>Link</p>
+                        <div className='rs-flex'>
+                            <div className='rs-mr-5'>
+                                <p>ID</p>
+                                <p>Rating</p>
+                            </div>
+                            <div>
+                                <p>: { data.product_id }</p>
+                                <p>: { Math.round(data.predicted_rating * 100) / 100 }</p>
+                            </div>
                         </div>
-                        <div>
-                            <p>: { data.product_id }</p>
-                            <p>: { Math.round(data.predicted_rating * 100) / 100 }</p>
-                            <p>: <a className='rs-r-link' target='_blank' href={ data.product_url }>{ data.product_url }</a></p>
+                        <div className='rs-r-btn'>
+                            <a className='rs-r-link' target='_blank' href={ data.product_url }>Product</a>
                         </div>
                     </div>
                 </div>

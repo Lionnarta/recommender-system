@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/recommender-system/static/css/main.ba47ee26.chunk.css",
-    "main.js": "/recommender-system/static/js/main.88dafa5e.chunk.js",
-    "main.js.map": "/recommender-system/static/js/main.88dafa5e.chunk.js.map",
-    "runtime-main.js": "/recommender-system/static/js/runtime-main.eb0f9fb2.js",
-    "runtime-main.js.map": "/recommender-system/static/js/runtime-main.eb0f9fb2.js.map",
+    "main.css": "/recommender-system/static/css/main.f82810ab.chunk.css",
+    "main.js": "/recommender-system/static/js/main.3f6ded89.chunk.js",
+    "main.js.map": "/recommender-system/static/js/main.3f6ded89.chunk.js.map",
+    "runtime-main.js": "/recommender-system/static/js/runtime-main.e4fa83cc.js",
+    "runtime-main.js.map": "/recommender-system/static/js/runtime-main.e4fa83cc.js.map",
     "static/css/2.1a5d2f04.chunk.css": "/recommender-system/static/css/2.1a5d2f04.chunk.css",
     "static/js/2.b014c8a7.chunk.js": "/recommender-system/static/js/2.b014c8a7.chunk.js",
     "static/js/2.b014c8a7.chunk.js.map": "/recommender-system/static/js/2.b014c8a7.chunk.js.map",
-    "static/js/3.f3ad81ce.chunk.js": "/recommender-system/static/js/3.f3ad81ce.chunk.js",
-    "static/js/3.f3ad81ce.chunk.js.map": "/recommender-system/static/js/3.f3ad81ce.chunk.js.map",
+    "static/js/3.bfddd2f9.chunk.js": "/recommender-system/static/js/3.bfddd2f9.chunk.js",
+    "static/js/3.bfddd2f9.chunk.js.map": "/recommender-system/static/js/3.bfddd2f9.chunk.js.map",
     "index.html": "/recommender-system/index.html",
     "static/css/2.1a5d2f04.chunk.css.map": "/recommender-system/static/css/2.1a5d2f04.chunk.css.map",
-    "static/css/main.ba47ee26.chunk.css.map": "/recommender-system/static/css/main.ba47ee26.chunk.css.map",
+    "static/css/main.f82810ab.chunk.css.map": "/recommender-system/static/css/main.f82810ab.chunk.css.map",
     "static/js/2.b014c8a7.chunk.js.LICENSE.txt": "/recommender-system/static/js/2.b014c8a7.chunk.js.LICENSE.txt",
     "static/media/styles.css": "/recommender-system/static/media/revicons.e8746a62.woff",
     "static/media/Login.css": "/recommender-system/static/media/walmart.d3d6ef90.jfif",
     "static/media/walmartLogo.d65d1ff4.png": "/recommender-system/static/media/walmartLogo.d65d1ff4.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.eb0f9fb2.js",
+    "static/js/runtime-main.e4fa83cc.js",
     "static/css/2.1a5d2f04.chunk.css",
     "static/js/2.b014c8a7.chunk.js",
-    "static/css/main.ba47ee26.chunk.css",
-    "static/js/main.88dafa5e.chunk.js"
+    "static/css/main.f82810ab.chunk.css",
+    "static/js/main.3f6ded89.chunk.js"
   ]
 }

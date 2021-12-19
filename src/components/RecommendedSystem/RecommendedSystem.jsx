@@ -3,6 +3,7 @@ import './RecommendedSystem.css'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 import walmartLogo from '../../assets/images/walmartLogo.png'
+import walmartLogo2 from '../../assets/images/walmarticon.jpg'
 
 const responsive = {
     superLargeDesktop: {
@@ -26,10 +27,18 @@ const responsive = {
 const RecommendedSystem = (props) => {
 
     const [recommendData, setRecommendData] = useState([]);
+    const [historyData, setHistoryData] = useState([]);
 
     let url = 'https://recommender-app-api.herokuapp.com/recommend';
+    let url2 = 'https://recommender-app-api.herokuapp.com/history';
     
     const req = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({"name": props.username}),
+    }
+
+    const req2 = {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({"name": props.username}),
@@ -43,7 +52,16 @@ const RecommendedSystem = (props) => {
                 setRecommendData(data.data);
             })
             .catch(err => {
-                console.log(err)
+                console.log(err);
+            })
+
+            fetch(url2, req2)
+            .then(res => res.json())
+            .then(data => {
+                setHistoryData(data.data);
+            })
+            .catch(err => {
+                console.log(err);
             })
         }
     })
@@ -78,6 +96,36 @@ const RecommendedSystem = (props) => {
         )
     }
 
+    const carouselData2 = (data) => {
+        const listData = data.map((data) => 
+            <div key={ data.id.toString() } className='rs-r-card-c'>
+                <div className='rs-r-card'>
+                    <img src={ walmartLogo2 } alt="" className='rs-r-carousel-img' />
+                    <div className='rs-r-carousel-text'>
+                        <div className='rs-flex'>
+                            <div className='rs-mr-5'>
+                                <p>ID</p>
+                                <p>User rating</p>
+                            </div>
+                            <div>
+                                <p>: { data.product_id }</p>
+                                <p>: { Math.round(data.user_rating * 100) / 100 }</p>
+                            </div>
+                        </div>
+                        <div className='rs-r-btn'>
+                            <a className='rs-r-link' target='_blank' href={ data.product_url }>Product</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        )
+        return (
+            <Carousel responsive={ responsive } showDots={ true } className='rs-rc-container' >
+                { listData }
+            </Carousel>
+        )
+    }
+
     return (
         <div className='rs-r-container rs-font-lato'>
             <div className='rs-mb-40'>
@@ -88,9 +136,17 @@ const RecommendedSystem = (props) => {
                 <div className='rs-r-name'>
                     Hi {props.username}, this is our products just for you 
                 </div>
-                <div>
+                <div className='rs-mb-15'>
                     {
                         recommendData.length !== 0 ? carouselData(recommendData) : null
+                    }
+                </div>
+                <div className='rs-r-name'>
+                    Recently purchased products
+                </div>
+                <div>
+                    {
+                        historyData.length !== 0 ? carouselData2(historyData) : null
                     }
                 </div>
             </div>

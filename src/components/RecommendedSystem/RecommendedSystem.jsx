@@ -74,16 +74,16 @@ const RecommendedSystem = (props) => {
                     <div className='rs-r-carousel-text'>
                         <div className='rs-flex'>
                             <div className='rs-mr-5'>
-                                <p>ID</p>
+                                <p className='rs-content-900'>ID</p>
                                 <p>Predicted rating</p>
                             </div>
                             <div>
-                                <p>: { data.product_id }</p>
+                                <p className='rs-content-900'>: { data.product_id }</p>
                                 <p>: { Math.round(data.predicted_rating * 100) / 100 }</p>
                             </div>
                         </div>
                         <div className='rs-r-btn'>
-                            <a className='rs-r-link' target='_blank' href={ data.product_url }>Product</a>
+                            <a className='rs-r-link' target='_blank' href={ data.product_url }>Product Link</a>
                         </div>
                     </div>
                 </div>
@@ -104,16 +104,16 @@ const RecommendedSystem = (props) => {
                     <div className='rs-r-carousel-text'>
                         <div className='rs-flex'>
                             <div className='rs-mr-5'>
-                                <p>ID</p>
+                                <p className='rs-content-900'>ID</p>
                                 <p>User rating</p>
                             </div>
                             <div>
-                                <p>: { data.product_id }</p>
+                                <p className='rs-content-900'>: { data.product_id }</p>
                                 <p>: { Math.round(data.user_rating * 100) / 100 }</p>
                             </div>
                         </div>
                         <div className='rs-r-btn'>
-                            <a className='rs-r-link' target='_blank' href={ data.product_url }>Product</a>
+                            <a className='rs-r-link' target='_blank' href={ data.product_url }>Product Link</a>
                         </div>
                     </div>
                 </div>

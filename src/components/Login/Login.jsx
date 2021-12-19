@@ -2,13 +2,34 @@ import React, { useState } from 'react'
 import './Login.css'
 import walmartLogo from '../../assets/images/walmartLogo.png'
 
-const Login = () => {
+const Login = (props) => {
 
-    const [username, setUsername] = useState('');
+    // const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        let url = 'https://recommender-app-api.herokuapp.com/auth';
+
+        const req = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({"username": props.username, "password": password}),
+        }
+
+        fetch(url, req)
+        .then(res => res.json())
+        .then(data => {
+            if (data.success) {
+                props.Login();
+            }
+            else {
+                console.log("Invalid");
+            }
+        })
+        .catch(err => {
+            console.log(err)
+        })
     }
 
     return (
@@ -26,7 +47,7 @@ const Login = () => {
                         </div>
 
                         <div>
-                            <input type="text" id="username" className='rs-form-input' placeholder=' ' autoComplete='off' required onChange={ (e) => setUsername(e.target.value) } />
+                            <input type="text" id="username" className='rs-form-input' placeholder=' ' autoComplete='off' required onChange={ (e) => props.SetName(e.target.value) } />
                             <label htmlFor='username' className='rs-form-label'>Username</label>
                         </div>
 

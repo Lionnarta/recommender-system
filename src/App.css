@@ -51,6 +51,10 @@
   font-size: 20px;
 }
 
+.rs-font-28 {
+  font-size: 28px;
+}
+
 .rs-content-300 {
   font-weight: 300;
 }
@@ -67,6 +71,14 @@
   font-weight: 700;
 }
 
+.rs-content-900 {
+  font-weight: 900;
+}
+
+.rs-letter {
+  letter-spacing: 2px;
+}
+
 .rs-mb-15 {
   margin-bottom: 15px;
 }
@@ -79,6 +91,18 @@
   margin-bottom: 30px;
 }
 
+.rs-mb-40 {
+  margin-bottom: 40px;
+}
+
+.rs-mr-5 {
+  margin-right: 5px;
+}
+
 .rs-logo {
   width: 150px;
+}
+
+.rs-pointer {
+  cursor: pointer;
 }
